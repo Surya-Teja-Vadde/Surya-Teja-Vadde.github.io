@@ -232,75 +232,77 @@
 	  </nav>
 
 	  <section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						
-						<!-- Image section comes first on the left side -->
-						<div class="one-third js-fullheight img shifted" style="background-image:url(images/me44.png);">
-							<div class="overlay"></div>
-						</div>
-	
-						<!-- Content section comes second on the right side -->
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading" style="font-size: 1.3em;">Hello!</span>
-								<h1 class="mb-4 mt-3">
-									<span style="color: black !important;">I'm</span> 
-									<span>Surya Teja</span>
-								</h1>
-	
-								<!-- Typing Animation -->
-								<span id="typing-animation"></span>
-	
-								<script>
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
-									const typingTexts = [ 'AWS Certified SAA & Practitioner ','Ex-Intern @Maven Silicon ','Ex-Intern @Pantech Solutions ', ' Ex-Associate director @Rotaract VITC'];
-	
-									function playTypingAnimation(index) {
-										typingAnimationElement.innerHTML = ''; // Clear previous content
-										const text = typingTexts[index];
-	
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
-											setTimeout(() => {
-												typingAnimationElement.innerHTML += `<span style="color: black;">${text[i]}</span>`;
-											}, i * 200);
-										}
-	
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											index = (index + 1) % typingTexts.length; // Move to next text
-											playTypingAnimation(index);
-										}, text.length * 200 + 1000); // Add delay before starting next text
-									}
-	
-									// Start the typing animation loop
-									playTypingAnimation(0);
-								</script>
-	
-								<br><br>
-								<h2 style="color: black !important;">Final Year B.Tech Student</h2>
-								<p>
-									<a href="https://www.linkedin.com/in/surya-teja-vadde-792121287" class="btn btn-primary py-3 px-4" style="background-color: #eaaa2a; color: white; border: none; font-size: 0.8em;">LinkedIn</a>
-									<!-- <a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a> -->
-								</p>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	  
-	  
-
+      <div class="home-slider owl-carousel">
+          <div class="slider-item">
+              <div class="overlay"></div>
+              <div class="container">
+                  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                      
+                      <!-- Image section comes first on the left side -->
+                      <div class="one-third js-fullheight img shifted" style="background-image:url(images/me44.png);">
+                          <div class="overlay"></div>
+                      </div>
+  
+                      <!-- Content section comes second on the right side -->
+                      <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+                          <div class="text">
+                              <span class="subheading" style="font-size: 1.3em;">Hello!</span>
+                              <h1 class="mb-4 mt-3">
+                                  <span style="color: black !important;">I'm</span> 
+                                  <span>Surya Teja</span>
+                              </h1>
+  
+                              <!-- Typing Animation -->
+                              <span id="typing-animation"></span>
+  
+                              <script>
+                                  // Initialize the typing animation
+                                  const typingAnimationElement = document.getElementById('typing-animation');
+                                  const typingTexts = [ 'AWS Certified SAA & Practitioner ','Ex-Intern @Maven Silicon ','Ex-Intern @Pantech Solutions ', ' Ex-Associate director @Rotaract VITC'];
+  
+                                  function playTypingAnimation(index) {
+                                      typingAnimationElement.innerHTML = ''; // Clear previous content
+                                      const text = typingTexts[index];
+  
+                                      // Loop through each character and add it to the element
+                                      for (let i = 0; i < text.length; i++) {
+                                          setTimeout(() => {
+                                              typingAnimationElement.innerHTML += `<span style="color: black;">${text[i]}</span>`;
+                                          }, i * 200);
+                                      }
+  
+                                      // Once the animation is complete, reset the text and start over
+                                      setTimeout(() => {
+                                          index = (index + 1) % typingTexts.length; // Move to next text
+                                          playTypingAnimation(index);
+                                      }, text.length * 200 + 1000); // Add delay before starting next text
+                                  }
+  
+                                  // Start the typing animation loop
+                                  playTypingAnimation(0);
+                              </script>
+  
+                              <br><br>
+                              <h2 style="color: black !important;">Final Year B.Tech Student</h2>
+  
+                              <!-- LinkedIn Button Container -->
+                              <p style="position: relative; top: 0.5cm; left: 0cm;" id="linkedin-button-container">
+                                  <a href="https://www.linkedin.com/in/surya-teja-vadde-792121287" 
+                                     class="btn btn-primary py-3 px-4" 
+                                     style="background-color: #eaaa2a; color: white; border: none; font-size: 0.8em;">
+                                      LinkedIn
+                                  </a>
+                              </p>
+                              <!-- End LinkedIn Button Container -->
+  
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
@@ -318,11 +320,7 @@
 							<!-- <p><span class="title-s">Fields of Interest: </span> <span>Cloud, IoT, Embedded Systems, VLSI</span></p> -->
 							<p><span class="title-s">Location: </span> <span>Hyderabad, Chennai, India</span></p>
               <p><span class="title-s">University: </span> <span>Vellore Institute of Technology</span></p>
-						</div>
-						
-						
-						
-												
+						</div>															
 					</div>
 				</div>
 				
@@ -353,7 +351,7 @@
 								<span class="number" data-number="7">0</span> <span>+</span>
 								<span>&nbsp; Projects completed</span>
 							</p>
-							<!-- <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+							<p><a href="https://github.com/Surya-Teja-Vadde" class="btn btn-primary py-3 px-3">Github</a></p>
 						</div>
 					</div>
 				</div>
